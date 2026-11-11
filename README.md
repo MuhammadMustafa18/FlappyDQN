@@ -3,9 +3,7 @@
 Deep Q-Learning (Double DQN) agent trained from scratch to master Flappy Bird using 15-Ray LIDAR obstacle detection and PyTorch.
 
 ## 🎥 Gameplay Demo
-https://github.com/user-attachments/assets/demo (or see [demo.mp4](demo.mp4))
-
-<video src="demo.mp4" controls width="640"></video>
+![Flappy Bird AI Demo](demo.gif)
 
 ## ✨ Features
 - **15-Ray LIDAR Raycasting:** Multi-angle ray collision detection against pipes, ceiling, and ground.
