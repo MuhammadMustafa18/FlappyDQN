@@ -235,8 +235,11 @@ class FlappyBirdEnv:
         pygame.draw.circle(self.screen, (255, 255, 255), (int(self.bird_x + 24), int(self.bird_y + 8)), 5)
         pygame.draw.circle(self.screen, (0, 0, 0), (int(self.bird_x + 26), int(self.bird_y + 8)), 2)
 
-        # Draw Score
+        # Score text
         score_surf = self.font.render(f"Score: {self.score}", True, (255, 255, 255))
+        # Shadow for contrast
+        shadow_surf = self.font.render(f"Score: {self.score}", True, (0, 0, 0))
+        self.screen.blit(shadow_surf, (SCREEN_WIDTH // 2 - score_surf.get_width() // 2 + 1, 26))
         self.screen.blit(score_surf, (SCREEN_WIDTH // 2 - score_surf.get_width() // 2, 25))
 
         pygame.display.flip()
